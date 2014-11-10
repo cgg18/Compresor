@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aplicacion.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccionar"
+        android:textSize="@dimen/aaa" />
+
+    <TextView
+        android:id="@+id/txtNombreArchivo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:minWidth="200dp"
+        android:padding="15dp"
+        android:text="Ruta del archivo"
+        android:textSize="@dimen/aaa" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNombreArchivo"
+        android:layout_below="@+id/txtNombreArchivo"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="@string/buscar"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnDescomprimir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnComprimir"
+        android:layout_alignBottom="@+id/btnComprimir"
+        android:layout_alignRight="@+id/btnBuscar"
+        android:layout_below="@+id/btnBuscar"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="Descomprimir"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnComprimir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBuscar"
+        android:layout_below="@+id/btnBuscar"
+        android:layout_toLeftOf="@+id/btnDescomprimir"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="Comprimir"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/btnComprimir"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btnComprimir"
+        android:layout_marginBottom="21dp"
+        android:scrollbars="vertical"
+        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssssddddddddddddddddhhhahsdbglasghklhsdgxchjgkhkxhfgljkxdfhgjkxhfjkghxcjkvbhjklcvbhkxcvhbjuxcvhbulcfhlgufhughlñicjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuwiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiidhhhhhhhhhhhhhhhhhheeeeeeeeeeeeeeeeeeeeeeeeeeeeeejjjddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd444444444444444444444444444444444444444444444444444444peneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeppppppppppppppppppppppppppeoeeeeeepppppppppppppppppppppppppppppppppppppppppppppppppppplllllllllllllllllllllllllllllllllleeeeeeeeeeeeoooooooooooooooooooooooooooop5555555555555555kkkkkkkkkkkkkiiinll" />
+
+</RelativeLayout>
