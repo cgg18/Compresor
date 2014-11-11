@@ -94,5 +94,16 @@ public class FileExplorerActivity extends ListActivity {
       finish();
     }
   }
+   
+   @Override
+   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+     if (resultCode == RESULT_OK && requestCode == 555) {
+       if (data.hasExtra("archivo_seleccionado")) {
+         archivo_seleccionado = data.getExtras().getString("archivo_seleccionado");
+         archivo_nombre = data.getExtras().getString("archivo_nombre");
+      //   archivo.setText(archivo_nombre);					<--- archivo not in scope
+       }
+     }
+   }
 
 }
